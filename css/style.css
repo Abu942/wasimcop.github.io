@@ -1,0 +1,174 @@
+*{ margin: 0; padding: 0; font-family: 'Rubik', sans-serif;}
+
+header{
+	width: 100%;
+	height: 100%
+	background-image: linear-gradient(to left, #fff 80%, #c3f5ff 20%);
+
+}
+
+.navsection{
+	width: 100%; height: 20; background-color: yellow; 
+	display: flex; justify-content: space-around;
+	align-items: center;
+	background-image: linear-gradient(to top, #fff 40%, #c3f5ff 60%);
+}
+
+.logo {
+	width: 20%;
+	color: #fff;
+	padding-left: 100px;
+	background-image: linear-gradient(#8d98e3, #854fee)
+	
+}
+.logo h1{
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	animation: aagepiche 2s linear infinite;
+	animation-direction: alternate;
+
+}
+
+@keyframes aagepiche{
+	from{padding-left: 40px;}
+	to{ padding-right: 40px; }
+}
+nav{
+	justify-content: space-around;
+}
+
+nav a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #000;
+	font-weight: 900;
+	font-size: 17px;
+	position: relative;
+}
+
+
+nav a:first-child{
+	color: #4458dc;
+}
+
+nav a: before{
+	content: "";
+	position: absolute;
+	top: 110%;
+	left: 0;
+	width: 0;
+	height: 2px;
+	border-bottom: 2px solid #4458dc;
+	transition: all 0.4s linear;
+
+}
+
+nav a:hover:before{
+	width: 100%
+
+
+}
+
+main {
+	height: 80vh;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.rightside{
+	border-radius: 100% 0% 99% 1% / 97% 0% 100% 3% ;
+	background-color: #e8fbff;
+
+}
+
+.rightside img{
+	max-width: 500px;
+	height: auto;
+}
+
+.leftside{
+	color: #000;
+	text-transform: uppercase;
+}
+
+.leftside h3{
+	font-size: 40px;
+	margin-bottom: 20px
+	position: relative;
+}
+
+.leftside h3:after{
+	content: "";
+	width: 350px;
+	height: 3px;
+	position: absolute;
+	top: 43%;
+	left: 20%;
+	background: #000:;
+
+}
+
+.leftside h1{
+	margin-top: 20px;
+	font-size: 40px;
+	margin-bottom: 25px;
+}
+
+
+
+.leftside h2{
+	margin: 0;
+	padding: 0;
+	font-family: consolas;
+	box-sizing: border-box;
+}
+
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100;
+	flex-direction: column;
+}
+
+a
+{
+	position: relative;
+	display: inline-block;
+	color: #03e9f4;
+	font-size: 24px;
+	text-transform: uppercase;
+	transition: 0.5s;
+	letter-spacing: 4px;
+
+}
+
+a:hover
+{
+	background: #854fee;
+	color: #050801;
+	box-shadow: 0 0 05px #854fee,
+	            0 0 25px #03e9f4,
+	            0 0 50px #03e9f4,
+	            0 0 100px #03e9f4;
+
+}
+a span:nth-child(1)
+{
+	top: 0;
+	left: 100;
+	width: 100%;
+	height: 2px;
+	background: linear-gradient(90deg,transparent,#03e9f4);
+	animation: animate1 1s linear infinite;
+
+}
+@keyframes animate1
+{
+	0%
+	{
+		left: 100%;
+	}
+}
